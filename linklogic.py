@@ -43,8 +43,8 @@ def open_sheets():
 def logic(driver):
     driver.implicitly_wait(100)
     driver.get("https://prodsupport.zestmoney.in")
-    driver.find_element_by_id("email-id").send_keys("lavanya@zestmoney.in")
-    driver.find_element_by_id("pwd").send_keys("GRBhd38h")
+    driver.find_element_by_id("email-id").send_keys("########") # Enter the Username
+    driver.find_element_by_id("pwd").send_keys("######") # Enter the Password
     driver.find_element_by_class_name("jss175").click()
     time.sleep(5)
     driver.get("https://prodsupport.zestmoney.in/dashboard/PaymentLink")
